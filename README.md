@@ -33,14 +33,14 @@ Once you have downloaded the class toolkit:
 - The output will be the policy for an MDP grid domain.
 
 ### Questionnaire
-1. Study the code in [./ap_mdp_lab.py] and answer the following questions.
+1. Study the code in [./ap_mdp_lab.py](./ap_mdp_lab.py) and answer the following questions.
 	1. What is the policy generated if we change the discount factor of the grid domain to 0.1?
 	2. Add the following line in ```ap_mdp_lab.py``` before ```vi.run()```: ```vi.verbose = True	```  
 	What is the variation for each of the first three iterations with the discount factor of 0.9 and how many iterations does the algorithm take to converge?
 	3. How does changes to the discount factor affect the variation of the state values over time?
 
 2. The scenario below has an interesting structure whereby the positive rewarding terminal state is partially surrounded by negatively-rewarding states. Program this scenario in pymdptoolbox and compute the optimal policy with a discount factor of 0.99,  
-   ![grid](https://github.com/pucrs-automated-planning/mdp-python-reference/raw/master/tex/fig/mdp-odd.png)
+   ![grid](https://github.com/pucrs-automated-planning/mdp/raw/master/mdp-odd.png)
 1. Define two new 5 by 5 domains with multiple obstacles and an interesting geometry and following the guidelines below. Calculate the policy with discount factor 0.99, and then try to explain intuitively the reason for the resulting policies, given the initial parameters. You can program these scenarios with any programming language you like (e.g. there are classes in Java that will help you do this http://code.google.com/p/aima-java/), but also including pymdptoolbox. These two scenarios must have the following characteristics:
 	1. A scenario with one (or more) terminal states with positive rewards and at least one other state with the same amount of, but negative reward and no terminal states with negative rewards.
 	2. A scenario with one terminal state with a negative reward and at least one non- terminal state with a positive reward.
