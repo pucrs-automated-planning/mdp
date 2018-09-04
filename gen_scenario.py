@@ -98,8 +98,8 @@ def sub2ind(shape, rows, cols):
     return rows*shape[1] + cols
 
 def ind2sub(shape, ind):
-    rows = (ind / shape[1])
-    cols = (ind % shape[1])
+    rows = int((ind / shape[1]))
+    cols = int((ind % shape[1]))
     return [rows, cols]
 
 def valid(I, J, shape, obstacles):
@@ -118,7 +118,7 @@ def left(A, I, J):
     elif A == 3:
         D = [I+1,J]
     else:
-        print "Invalid action"
+        print("Invalid action")
         return 0,0
     return D[0], D[1]
 
@@ -133,7 +133,7 @@ def right(A, I, J):
     elif A == 3:
         D = [I-1,J]
     else:
-        print "Invalid action"
+        print("Invalid action")
         return 0,0
     return D[0], D[1]
 
@@ -149,7 +149,7 @@ def front(A, I, J):
     elif A == 3:
         D = [I,J-1]
     else:
-        print "Invalid action"
+        print("Invalid action")
         return 0,0
     return D[0], D[1]
 
@@ -160,4 +160,4 @@ def print_policy(policy, shape, obstacles=[], terminals=[]):
         if sub in obstacles: p_policy[sub[0]][sub[1]] = 'O'
         elif sub in terminals: p_policy[sub[0]][sub[1]] = 'T'
         else: p_policy[sub[0]][sub[1]] = ACTIONS[policy[i]]
-    print p_policy
+    print(p_policy)
