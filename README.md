@@ -8,7 +8,9 @@ This implementation relies on the [pymdptoolbox](https://github.com/sawcordwell/
 In this practical exercise, we will look at how MDP planning is implemented in a mathematical toolkit, and track the calculation of the rewards for each state via Value Iteration.
 The following code sets up an MDP environment (the basic case shown in class, shown in the Figure below) and computes the policy for the given MDP using the Value Iteration.
 
-<img align="center" src="mdp_simple.png"/>
+<p align="center">
+<img src="mdp_simple.png"/>
+</p>
 
 Then we provide a set of questions for you to implement and answer. This assignment is not graded.
 
@@ -22,7 +24,9 @@ Then we provide a set of questions for you to implement and answer. This assignm
 2. The scenario below has an interesting structure whereby the positive rewarding terminal state is partially surrounded by negatively-rewarding states.
 Program this scenario in pymdptoolbox and compute the optimal policy with a discount factor of 0.99.
 
-<img align="center" src="mdp-odd.png"/>
+<p align="center">
+<img src="mdp-odd.png"/>
+</p>
 
 3. Define two new 5 by 5 scenarios with multiple obstacles and an interesting geometry following the guidelines below. Calculate the policy with discount factor 0.99, and then try to explain intuitively the reason for the resulting policies, given the initial parameters. These two scenarios must have the following characteristics:
 	1. A scenario with one (or more) terminal states with positive rewards and at least one other state with the same amount of, but negative reward and no terminal states with negative rewards.
