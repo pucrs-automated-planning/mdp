@@ -15,7 +15,7 @@ The following code sets up an MDP environment (the basic case shown in class, sh
 Then we provide a set of questions for you to implement and answer. This assignment is not graded.
 
 ### Questionnaire
-1. Study the code of the cell above and answer the following questions.
+1. Study the code of the [MDP notebook](MDP_notebook.ipynb) and answer the following questions.
 	1. What is the policy generated if we change the discount factor of the grid domain to 0.1?
 	2. Use the following line ```vi.verbose = True``` before ```vi.run()```:   
 	What is the variation for each of the first three iterations with the discount factor of 0.9 and how many iterations does the algorithm take to converge?
