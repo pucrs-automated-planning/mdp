@@ -27,13 +27,13 @@ def mdp_grid(shape=[], obstacles=[], terminals=[], pm=0.8, r=1, rewards=[]):
         for I in range(shape[0]):
             for J in range(shape[1]):
                 if [I, J] in obstacles:
-                    # Sfrom = sub2ind(shape, I, J)
-                    # P[A,Sfrom,Sfrom] = 1.0;
+                    Sfrom = sub2ind(shape, I, J)
+                    P[A, Sfrom, Sfrom] = 1.0
                     continue
 
                 if [I, J] in terminals:
-                    # Sfrom = sub2ind(shape, I, J)
-                    # P[A,Sfrom,Sfrom] = 1.0;
+                    Sfrom = sub2ind(shape, I, J)
+                    P[A, Sfrom, Sfrom] = 1.0
                     continue
 
                 Sfrom = sub2ind(shape, I, J)
