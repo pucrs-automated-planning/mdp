@@ -5,7 +5,7 @@ This implementation relies on the [pymdptoolbox](https://github.com/sawcordwell/
 
 ## MDPs in pymdptoolbox - Class Assignment
 
-In this practical exercise, we will look at how MDP planning is implemented in a mathematical toolkit, and track the calculation of the rewards for each state via Value Iteration.
+In this practical exercise, we will look at how we can implement MDP planning in a mathematical toolkit, and track the calculation of the rewards for each state via Value Iteration.
 The following code sets up an MDP environment (the basic case shown in class, shown in the Figure below) and computes the policy for the given MDP using the Value Iteration.
 
 <p align="center">
